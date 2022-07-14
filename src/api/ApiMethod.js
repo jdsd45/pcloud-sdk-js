@@ -23,7 +23,7 @@ export default function ApiMethod(method: string, options: ApiMethodOptions = {}
 
   const requestUrl: string = url.format({
     protocol: apiProtocol,
-    host: locations[locationid] || apiServer,
+    host: locations[2] || apiServer,
     pathname: method,
     query: params,
   });
